@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging</title>
+    <script src="blog.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row banner">
+            <h2 id="title">Simply Blogging</h2>
+        </div>
+        <div class="row menu banner">
+            <a href="#" class="link">Help Center</a>
+            <a href="#" class="link">About Us</a>
+            <a href="#footerText" class="link">Add Blog</a>
+        </div>
+        <div id="content">
+            <div class="eachContent">
+                <div class="row blogData">
+                    <h4>Healthy Ways to Cope with Stress</h4>
+                </div>
+                <div class="row blogData">
+                    <p>Take breaks from watching, reading, or listening to news stories, including those on social
+                        media. It’s good to be informed, but hearing about the pandemic constantly can be upsetting.
+                        Consider limiting news to just a couple times a day and disconnecting from phone, tv, and
+                        computer screens for a while. Take care of your body. Take deep breaths, stretch, or
+                        meditateexternal icon. Try to eat healthy, well-balanced meals. Exercise regularly. Get plenty
+                        of sleep. Avoid excessive alcohol, tobacco, and substance use. Continue with routine preventive
+                        measures (such as vaccinations, cancer screenings, etc.) as recommended by your healthcare
+                        provider. Get vaccinated with a COVID-19 vaccine when available. Make time to unwind. Try to do
+                        some other activities you enjoy. Connect with others. Talk with peopleexternal icon you trust
+                        about your concerns and how you are feeling. Connect with your community- or faith-based
+                        organizations. While social distancing measures are in place, try connecting online, through
+                        social media, or by phone or mail.</p>
+                </div>
+                <div class="row blogData">
+                    <h6>Author : Muhammed Shamees</h6>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <form class="form-group" onsubmit="return addBlog()" onload="reset()">
+            <div>
+                <h6>Simply Blogging offers you to write articles for free. Provide your name, title and content below
+                    and Voila! Your blog will be published!</h6>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-1">Author:</div>
+                <div class="col-sm-12 col-md-4"><input type="text" name="userName" class="form-control" /></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-1">Title:</div>
+                <div class="col-sm-12 col-md-4"><input type="text" name="titleBlog" class="form-control" /></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-1">Content:</div>
+                <div class="col-sm-12 col-md-9"><textarea name="content" class="form-control"></textarea></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-1">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                </div>
+                <div class="col-sm-12 col-md-1">
+                    <input type="reset" class="btn btn-secondary" />
+                </div>
+            </div>
+
+        </form>
+        <div class="banner">
+            <p id="footerText"><strong>Simply Blogging</strong>, where Freedom of Expression is unleashed!</p>
+        </div>
+</body>
+
+</html>

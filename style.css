@@ -1,0 +1,46 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-color: #ecf0f1;
+}
+
+.banner {
+  background-color: #3498db;
+  color: white;
+}
+
+#title {
+  margin-left: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.link {
+  text-decoration: none !important;
+  color: white;
+  padding: 10px;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #ddd;
+  transition: 0.3s;
+}
+
+.eachContent {
+  border: 1px blue solid;
+  margin: 15px;
+}
+
+.blogData {
+  margin: 20px;
+}
+
+#footerText {
+  text-align: center;
+}
